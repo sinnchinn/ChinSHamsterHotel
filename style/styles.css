@@ -1,5 +1,11 @@
-.navBg{
+.navBg {
     background-color: #000324;
+}
+
+.nav>.active>a {
+    border-style: 10px solid;
+    border-width: medium;
+    border-color: white;
 }
 
 .navText {
@@ -12,39 +18,58 @@
     color: white;
 }
 
+.font2
+{
+    margin-left: 0;
+    padding-top: 100px;
+    font-family: Dosis;
+    font-size: 30px; 
+    color: black;
+}
+
+.font3 {
+    font-family: Dosis;
+    font-size: 14px; 
+    color: black;
+}
+
 .textMargins {
     text-align: center;
 }
 
-/* .header {
-    max-width: 100%;
-    max-height: 60%;
-    border-radius: 0;
-    overflow: hidden;
-    object-position: 70% 15%;
-  } */
-
 .bgImage {
     background-image: url(../assets/header.jpg);
-}
-
-/* .imageHeader {
-    position: absolute;
-    width: 60%;
-    height: 40%;
-    top: 100px;
-    left: 300px;
-    bottom: 100px;
-    background: transparent;
-    border: #000324;
+    background-repeat: no-repeat;
+    background-size: 110% 200%;
+    background-position: center;
 }
 
 .box {
-    margin: 30px;
     background-color: #000324;
     border: 1px solid black;
     opacity: 0.8;
-    filter: alpha(opacity=60); 
-    } */
+    filter: alpha(opacity=60);
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding-left: 70px;
+    padding-right: 70px; */
+}
 
+.hamHome {
+    padding-top: 100px;
+    margin-left: 150px;
+    width: 150%;
+    height: 80%;
+}
 
+.awardImage {
+    width: 160px;
+    height: 140px;
+}
+
+.genImage {
+    width: 190px;
+    height: 170px;
+}
