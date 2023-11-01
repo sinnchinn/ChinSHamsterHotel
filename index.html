@@ -11,21 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
     <!-- start of navbar -->
     <div class="container-fluid navBg font">
         <div class="row">
             <ul class="nav justify-content-center">
                 <li class="nav-item navText">
-                    <a style="color: white;" class="nav-link active" aria-current="page" href="#">Overview</a>
+                    <a style="color: #FFFFFF;" class="nav-link active" aria-current="page" href="#">Overview</a>
                 </li>
                 <li class="nav-item navText">
-                    <a style="color: white;" class="nav-link" href="#">Rooms</a>
+                    <a style="color: #FFFFFF;" class="nav-link" href="#">Rooms</a>
                 </li>
                 <li class="nav-item navText">
-                    <a style="color: white;" class="nav-link" href="#">Packages</a>
+                    <a style="color: #FFFFFF;" class="nav-link" href="#">Packages</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="">
@@ -33,13 +35,13 @@
                     </a>
                 </li>
                 <li class="nav-item navText">
-                    <a style="color: white;" class="nav-link" href="#">Amenities</a>
+                    <a style="color: #FFFFFF;" class="nav-link" href="#">Amenities</a>
                 </li>
                 <li class="nav-item navText">
-                    <a style="color: white;" class="nav-link" href="#">Contact</a>
+                    <a style="color: #FFFFFF;" class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item border navText">
-                    <a style="color: white;" class="nav-link" href="#">Reserve</a>
+                    <a style="color: #FFFFFF;" class="nav-link" href="#">Reserve</a>
                 </li>
             </ul>
         </div>
@@ -53,7 +55,7 @@
             <div class="col-2"></div>
             <div class="col-8 box font textMargins">
                 <h1>Run on the Wheel of Luxury</h1>
-                <p>Explore everything the beach has to offer in our relaxing resort</p>
+                <p class="fontSans">Explore everything the beach has to offer in our relaxing resort</p>
             </div>
         </div>
     </div>
@@ -65,30 +67,116 @@
     <div class="container">
         <div class="row">
             <div class="col-2 ">
-                <img class="hamHome" src="./assets/hamsterhomejpg.jpg" alt="">
+                <img class="hamHome" src="./assets/hamsterhomejpg.jpg"
+                    alt="Hamster on a beach chair wearing a hat and eating">
             </div>
-            <div style="margin-left: 250px" class="col-7">
+            <div style="margin-left: 250px" class="col-6">
                 <h1 class="font2">Welcome to a hamster's paradise</h1>
-                <p class="font3">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed for the small mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a relaxing spa, and a pool with a beach side view. </p>
-                <p class="font3">Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich accommodations along with our unmatched luxury. Discover the satisfaction of indulging in our quality rooms, and thank you for choosing La Petite Maison.</p>
-                <img style="margin-right: 110px;" class="awardImage" src="./assets/awardfinest.png" alt=""> 
-                <img style="margin-right: 110px;" class="genImage" src="./assets/awardsatisfaction.png" alt=""> 
-                <img class="awardImage" src="./assets/awardgenuine.png" alt="">
+                <p class="font3">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed
+                    for the small mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a
+                    relaxing spa, and a pool with a beach side view. </p>
+                <p class="font3">Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich
+                    accommodations along with our unmatched luxury. Discover the satisfaction of indulging in our
+                    quality rooms, and thank you for choosing La Petite Maison.</p>
+                <img style="margin-right: 58px;" class="awardImage" src="./assets/awardfinest.png"
+                    alt="finest award image">
+                <img style="margin-right: 58px;" class="genImage" src="./assets/awardsatisfaction.png"
+                    alt="satisfaction award image">
+                <img class="awardImage" src="./assets/awardgenuine.png" alt="genuine award image">
             </div>
         </div>
     </div>
     <!-- end of hamster's paradise box -->
 
 
-    <div class="container-fluid ">
+    <!-- start of room cards -->
+    <div class="container-fluid bgImage2">
         <div class="row">
-            <div class="col"></div>
-            <div class="col-8"></div>
-            <div class="col"></div>
+            <div style="padding-top: 40px;" class="col roomFont">
+                <h2 class="textMargins">Our Rooms</h2>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10 roomCards">
+                    <div class="card-group">
+                        <div style="margin-right: 20px; margin-left: 30px;" class="card">
+                            <img class="roomImage" src="./assets/room1.jpg" class="card-img-top" alt="room 1 image">
+                            <div class="card-body">
+                                <h5 class="card-title cardFont">Queen Room</h5>
+                                <p style="font-weight: bolder;" class="card-text font3"> 850 SQ FT room with city view
+                                </p>
+                                <ul class="font3">
+                                    <li>One queen size bed</li>
+                                    <br>
+                                    <li>Seed Barl fireplace and large balcony</li>
+                                    <br>
+                                    <li>Small kitchen with refrigerator and stove</li>
+                                </ul>
+                                <a style="margin-top: 51px;" href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div>
+                        <div style="margin-right: 20px;" class="card">
+                            <img src="./assets/room2.jpg" class="card-img-top" alt="room 2 image">
+                            <div class="card-body">
+                                <h5 class="card-title cardFont">King Room</h5>
+                                <p style="font-weight: bolder;" class="card-text font3">950 SQ FT room with beach view
+                                </p>
+                                <ul class="font3">
+                                    <li>One king size bed</li>
+                                    <br>
+                                    <li>Seed Bar, fireplace and large balcony</li>
+                                    <br>
+                                    <li>Small kitchen with refrigerator and stove</li>
+                                    <br>
+                                </ul>
+                                <a style="margin-top: 30px" href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/room3.jpg" class="card-img-top" alt="room 3 image">
+                            <div class="card-body">
+                                <h5 class="card-title cardFont">Beach Side Suite</h5>
+                                <p style="font-weight: bolder;" class="card-text font3">1500 SQ FT Suite with beach view
+                                </p>
+                                <ul class="font3">
+                                    <li>One California king size bed</li>
+                                    <br>
+                                    <li>Second room with fireplace, hot tub and balcony</li>
+                                    <br>
+                                    <li>Seed bar and coffee station</li>
+                                    <br>
+                                    <li>Full kitchen with a refrigerator, stove, and island</li>
+                                </ul>
+                                <a style="margin-top: 3px;" href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
         </div>
     </div>
+    <!-- end of room cards -->
 
 
+    <div class="container">
+        <div class="row">
+            <div style="padding-top: 5%; padding-bottom: 20px;" class="col packagesFont textMargins">Packages</div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div class="hamster">
+                    <img class="hamster" src="./assets/hamsterwedding.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="col-7">
+                <h2 class="cardFont hamsterMarginLeft">Beach Wedding package</h2>
+                <br>
+                <p class="hamsterMarginLeft">Starting US $1,500,000</p>
+            </div>
+        </div>
+    </div>
 
 
 

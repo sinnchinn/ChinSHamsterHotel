@@ -5,7 +5,7 @@
 .nav>.active>a {
     border-style: 10px solid;
     border-width: medium;
-    border-color: white;
+    border-color: #E5FEFF;
 }
 
 .navText {
@@ -15,7 +15,13 @@
 .font {
     font-family: Dosis;
     font-size: 20px;
-    color: white;
+    color: #E5FEFF;
+}
+
+.fontSans {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #E5FEFF;
 }
 
 .font2
@@ -24,13 +30,31 @@
     padding-top: 100px;
     font-family: Dosis;
     font-size: 30px; 
-    color: black;
+    color: #1A1B26;
 }
 
 .font3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px; 
+    color: #1A1B26;
+}
+
+.roomFont {
     font-family: Dosis;
-    font-size: 14px; 
-    color: black;
+    font-size: 25px;
+    color: white;
+}
+
+.cardFont {
+    font-family: Dosis;
+    font-size: 25px;
+    color: #1A1B26;
+}
+
+.packagesFont {
+    font-family: Dosis;
+    font-size: 35px;
+    color: #1A1B26;
 }
 
 .textMargins {
@@ -72,4 +96,48 @@
 .genImage {
     width: 190px;
     height: 170px;
+}
+
+.bgImage2 {
+    background-image: url(../assets/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 110% 190%;
+    background-position: center;
+}
+
+.roomCards {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.card {
+    border-radius: 0;
+    width: 150%;
+}
+
+.btn {
+    background-color: #004CC7;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hamster {
+    margin-left: 60px;
+    width: 100%;
+    height: 81%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hamsterMarginLeft {
+    margin-left: 115px;
+}
+
+.packageBlue {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #1F51A8;
 }
