@@ -314,6 +314,9 @@
 /* AMENITIES END */
 
 /* RESERVE START */
+noWrap {
+    white-space: nowrap;
+}
 
 .hamReserve {
     width: 100%;
