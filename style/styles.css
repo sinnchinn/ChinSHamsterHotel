@@ -334,9 +334,13 @@ body {
     justify-content: center;
 }
 
+.align {
+    padding: ;
+}
+
 .searchBar {
     height: 40px;
-    width: 190px;
+    width: 200px;
     border-radius: 0;
 }
 
