@@ -89,15 +89,15 @@
     <!-- start of hamster's paradise box -->
     <div class="container">
         <div class="row">
+            <div style="padding: 0;" class="col .d-none d-sm-block d-md-none">
+                <img class="hamHomeSm" src="./assets/hamsterhomejpg.jpg"
+                    alt="Hamster on a beach chair wearing a hat and eating">
+            </div>
+        </div>
+        <div class="row">
             <div class="col-xl-2 col-lg-2 noShow d-md-none d-sm-none d-lg-block">
                 <img class="hamHome" src="./assets/hamsterhomejpg.jpg"
                     alt="Hamster on a beach chair wearing a hat and eating">
-            </div>
-            <div class="row">
-                <div style="padding: 0;" class="col .d-none d-sm-block d-md-none">
-                    <img class="hamHomeSm" src="./assets/hamsterhomejpg.jpg"
-                        alt="Hamster on a beach chair wearing a hat and eating">
-                </div>
             </div>
             <div style="margin-left: 250px" class="col-xl-6 col-lg-6 d-md-none d-lg-block noShow">
                 <h1 class="font2 ">Welcome to a hamster's paradise</h1>
@@ -161,8 +161,8 @@
 
     <!-- start of room cards -->
     <div class="container-fluid bgImage2">
-        <div class="row">
-            <div style="padding-top: 40px;" class="col-xl-12 col-lg-12 col-md-12 roomFont">
+        <div class="row dontShow">
+            <div style="padding-top: 40px;" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 roomFont">
                 <h2 class="textMargins">Our Rooms</h2>
             </div>
             <div class="row">
@@ -170,7 +170,9 @@
                 <div class="col-xl-10 col-lg-10 col-md-12 roomCards">
                     <div class="card-group" style="width: 105%; height: 100%;">
                         <div style="margin-right: 20px;" class="card">
-                            <img class="cardImage" src="./assets/room1.jpg" class="card-img-top" alt="room 1 image">
+                            <div class="hidden">
+                                <img class="queenRoom" src="./assets/room1.jpg" class="card-img-top" alt="room 1 image">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title cardFont">Queen Room</h5>
                                 <p style="font-weight: bolder;" class="card-text font3"> 850 SQ FT room with city view
@@ -186,7 +188,9 @@
                             </div>
                         </div>
                         <div style="margin-right: 20px;" class="card">
-                            <img src="./assets/room2.jpg" class="card-img-top" alt="room 2 image">
+                            <div class="hidden">
+                                <img class="kingRoom" src="./assets/room3.jpg" class="card-img-top" alt="room 2 image">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title cardFont">King Room</h5>
                                 <p style="font-weight: bolder;" class="card-text font3">950 SQ FT room with beach view
@@ -203,7 +207,9 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="./assets/room3.jpg" class="card-img-top" alt="room 3 image">
+                            <div class="hidden">
+                                <img class="beachRoom" src="./assets/room2.jpg" class="card-img-top" alt="room 3 image">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title cardFont">Beach Side Suite</h5>
                                 <p style="font-weight: bolder;" class="card-text font3">1500 SQ FT Suite with beach view
@@ -229,8 +235,84 @@
     <!-- end of room cards -->
 
 
+    <!-- phone responsiveness room cards -->
+    <div class="container-fluid bgImage2 d-sm-block d-md-none">
+        <div class="row">
+            <div style="padding-top: 40px;" class=" d-sm-block d-md-none
+            roomFont">
+                <h2 class="textMargins">Our Rooms</h2>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col roomCards">
+                    <div class="card-group" style="width: 73%;">
+                        <div class="card">
+                            <div class="hidden">
+                                <img class="queenRoom" src="./assets/room1.jpg" class="card-img-top" alt="room 1 image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title cardFont">Queen Room</h5>
+                                <p style="font-weight: bolder;" class="card-text font3"> 850 SQ FT room with city view
+                                </p>
+                                <ul class="font3">
+                                    <li>One queen size bed</li>
+                                    <br>
+                                    <li>Seed Barl fireplace and large balcony</li>
+                                    <br>
+                                    <li>Small kitchen with refrigerator and stove</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div>
+                        <div style="margin-right: 20px;" class="card">
+                            <div class="hidden">
+                                <img class="kingRoom" src="./assets/room3.jpg" class="card-img-top" alt="room 2 image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title cardFont">King Room</h5>
+                                <p style="font-weight: bolder;" class="card-text font3">950 SQ FT room with beach view
+                                </p>
+                                <ul class="font3">
+                                    <li>One king size bed</li>
+                                    <br>
+                                    <li>Seed Bar, fireplace and large balcony</li>
+                                    <br>
+                                    <li>Small kitchen with refrigerator and stove</li>
+                                    <br>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="hidden">
+                                <img class="beachRoom" src="./assets/room2.jpg" class="card-img-top" alt="room 3 image">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title cardFont">Beach Side Suite</h5>
+                                <p style="font-weight: bolder;" class="card-text font3">1500 SQ FT Suite with beach view
+                                </p>
+                                <ul class="font3">
+                                    <li>One California king size bed</li>
+                                    <br>
+                                    <li>Second room with fireplace, hot tub and balcony</li>
+                                    <br>
+                                    <li>Seed bar and coffee station</li>
+                                    <br>
+                                    <li>Full kitchen with a refrigerator, stove, and island</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end phone responsiveness room cards -->
+
+
     <!-- start of packages -->
-    <div class="container d-md-none d-lg-block">
+    <div class="container d-md-none d-lg-block noShow">
         <div class="row">
             <div style="padding-top: 5%; padding-bottom: 20px;" class="col packagesFont textMargins">Packages</div>
         </div>
@@ -294,7 +376,7 @@
 
 
     <!-- start tablet responsiveness packages -->
-    <div class="container-fluid d-none d-md-block d-lg-none">
+    <div class="container-fluid d-none d-md-block d-lg-none noShow">
         <div class="row">
             <div style="padding-top: 5%; padding-bottom: 20px;" class="col-md packagesFont textMargins">Packages</div>
         </div>
@@ -371,6 +453,83 @@
     <!-- end tablet responsiveness paackages -->
 
 
+    <!-- start mobile responsiveness packages -->
+    <div class="container-fluid d-sm-block d-md-none">
+        <div class="row">
+            <div style="padding-top: 5%; padding-bottom: 20px;" class="col-md packagesFont textMargins">Packages</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="hamsterSm">
+                    <img class="hamsterSm" src="./assets/hamsterwedding.jpg" alt="hamster with yarn and hearts">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div style="padding-top: 20px;" class="col-sm-10 py-0">
+                    <h2 class="cardFont">Beach Wedding package</h2>
+                    <br>
+                    <p class=" packageBlue">Starting US $1,500.00</p>
+                    <br>
+                    <p class=" packageFont">Feel the warmth of the beach as the flames in your hearts
+                        ignite during our romantic beach side wedding. All wedding packages include catering, an open
+                        bar,
+                        and one tier wedding cake (9" Vanilla standard cake). A private dinner for your closets family
+                        members and friends will be provided after the ceremony.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="hamsterSm">
+                    <img class="hamsterSm" src="./assets/hamsterspring.jpg" alt="hamster in the spring time">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <h2 class="cardFont ">Full Bloom Package</h2>
+                    <br>
+                    <p class=" packageBlue">Starting US $1,000.00</p>
+                    <br>
+                    <p class=" packageFont">Enjoy the shade of our cherry trees as you join us during our spring time
+                        celebration. We invite you to our orchards for cherry, strawberry, and apple picking that is
+                        open
+                        all day. We end each evening with fresh, vegetable centric dinners along with a live show from
+                        local
+                        musicians.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-bottom: 5%;" class="row">
+            <div class="col-sm-10">
+                <div class="hamsterSm">
+                    <img class="hamsterSm" src="./assets/hamstercheese.jpg" alt="hamster with yarn and hearts">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 py-0">
+                    <h2 class="cardFont ">Cheese and Seed Tour Package</h2>
+                    <br>
+                    <p class=" packageBlue">Starting US $1,200.00</p>
+                    <br>
+                    <p class=" packageFont">Immerse yourself in the flavors of Cavia with our Cheese
+                        and
+                        Seed tour. We consulted with connoisseurs from around the globe to bring you the best flavors
+                        that
+                        nature has to offer, and create our cheeses right here at our local creamery. Cheese and seeds
+                        are
+                        served all day and nightly spa treatment is provided after dinner.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end tablet responsiveness paackages -->
+
+
     <!-- start of amenities -->
     <div class="container-fluid bgImage3 d-none .d-xl-block .d-xxl-none d-none d-lg-block .d-xl-none
     ">
@@ -407,7 +566,7 @@
 
 
     <!-- start tablet responsiveness amenities -->
-    <div class="container-fluid bgImage3 .d-none d-md-block d-lg-none">
+    <div class="container-fluid bgImage3 .d-none d-md-block d-lg-none dontShow">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -421,7 +580,7 @@
 
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-10 ">
                 <div style="padding-top: 30px; padding-bottom: 30px;" class="col amenFontBold flex">
                     <img src="./assets/24hour.png" alt="">
                 </div>
@@ -481,6 +640,84 @@
     </div>
     <!-- end tablet responsiveness amenities -->
 
+
+    <!-- start mobile responsiveness amenities -->
+    <div class="container-fluid bgImage3 .d-none d-sm-block d-md-none">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <h1 style="padding-top: 30px;" class="amenFont textMargins">Amenities</h1>
+                <h2 class="amenFont2 textMargins">Here at La Petite Maison, we invite you to
+                    enjoy our services in hopes
+                    that you have the most relaxing stay we can provide.</h2>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 ">
+                <div style="padding-top: 30px; padding-bottom: 30px;" class="col amenFontBold flex">
+                    <img src="./assets/24hour.png" alt="">
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="row">
+                    <div class="col amenFontBold">
+                        <p class="textMargins">24 Hour Room Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div style="padding-top: 20px; padding-bottom: 20px;" class="col-sm-10 flex">
+                <img src="./assets/breakfast.png" alt="">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 amenFontBold">
+                    <p style="margin-left: 20px;" class="textMargins">Complimentary Breakfast</p>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div style="padding-top: 30px; padding-bottom: 30px;" class="col amenFontBold flex">
+                    <img src="./assets/valet.png" alt="">
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="row">
+                    <div class="col amenFontBold">
+                        <p class="textMargins">Valet Parking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-bottom: 30px;" class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div style="padding-top: 30px; padding-bottom: 30px;" class="col amenFontBold flex">
+                    <img src="./assets/pool.png" alt="">
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="row">
+                    <div class="col amenFontBold">
+                        <p class="textMargins">Beachside Pool</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end mobile responsiveness amenities -->
+
+
+
     <!-- start of reserve box -->
     <div class="container-fluid">
         <div class="row flex">
@@ -489,31 +726,31 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 reserveBar box2">
                         <h1 class="amenFont textMargins">Reserve a Room</h1>
                         <div class="row">
-                            <div style="padding: 0;" class="col-xl-2 col-lg-2 d-md-none d-lg-block">
+                            <div style="padding: 0;" class="col-xl-2 col-lg-2 d-md-none d-lg-block noShow">
                                 <p class="fontSans checkIn">Check In</p>
                             </div>
-                            <div style="padding: 0;" class="col-md-2 d-none d-md-block d-lg-none">
+                            <div style="padding: 0;" class="col-md-2 d-none d-md-block d-lg-none dontShow">
                                 <p class="fontSans checkIn">Check In</p>
                             </div>
 
-                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
+                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block noShow">
                                 <p class="fontSans checkIn">Check Out</p>
                             </div>
-                            <div style="padding: 0;" class="col-md-2 d-none d-md-block d-lg-none">
+                            <div style="padding: 0;" class="col-md-2 d-none d-md-block d-lg-none dontShow">
                                 <p class="fontSans checkIn">Check Out</p>
                             </div>
 
-                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
+                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block noShow">
                                 <p style="white-space: nowrap;" class="fontSans checkIn">Number of Guests</p>
                             </div>
-                            <div class="col-md-2 d-none d-md-block d-lg-none">
+                            <div class="col-md-2 d-none d-md-block d-lg-none dontShow">
                                 <p style="padding: 0;" class="fontSans checkIn">Number of Guests</p>
                             </div>
 
-                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
+                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block noShow">
                                 <p class="fontSans checkIn">Room Type</p>
                             </div>
-                            <div class="col-md-2 d-none d-md-block d-lg-none">
+                            <div class="col-md-2 d-none d-md-block d-lg-none dontShow">
                                 <p style="padding: 0;" class="fontSans checkIn">Room Type</p>
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-2"></div>
@@ -521,7 +758,7 @@
                         </div>
 
                         <!-- tablet responsiveness -->
-                        <div class="row d-none d-md-block d-lg-none">
+                        <div class="row d-none d-md-block d-lg-none dontShow">
                             <form class="d-flex flex" role="search">
                                 <input style="padding-left: 0;" class="form-control me-2 
                                 medSearchBar" type="search" placeholder="" aria-label="Search">
@@ -537,7 +774,8 @@
                         </div>
                         <!-- end tablet responsiveness -->
 
-                        <div class="row d-md-none d-lg-block">
+                        <!-- desktop -->
+                        <div class="row d-md-none d-lg-block noShow">
                             <form class="d-flex flex" role="search">
                                 <input style="padding-left: 0;" class="form-control me-2 searchBar" type="search"
                                     placeholder="" aria-label="Search">
@@ -551,6 +789,67 @@
                                     type="submit">Check Availability</button>
                             </form>
                         </div>
+                        <!-- desktop -->
+
+
+                        <!-- mobile responsiveness -->
+                        <div class="container-fluid d-sm-block d-md-none">
+                            <div class="row">
+                                <div class="col">
+                                    <div style="padding: 0;" class="col-sm-1 d-sm-block d-md-none">
+                                        <p class="fontSans textMargins checkIn">Check In</p>
+                                    </div>
+                                    <form class="d-flex flex" role="search">
+                                        <input class="form-control me-2 
+                                smallSearchBar" type="search" placeholder="" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div style="padding: 0;" class="col-sm-1 d-sm-block d-md-none">
+                                        <p class="fontSans textMargins checkIn">Check Out</p>
+                                    </div>
+                                    <form class="d-flex flex" role="search">
+                                        <input class="form-control me-2 
+                                smallSearchBar" type="search" placeholder="" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div style="padding: 0;" class="col-sm-1 d-sm-block d-md-none">
+                                        <p class="fontSans textMargins checkIn">Number of Guests</p>
+                                    </div>
+                                    <form class="d-flex flex" role="search">
+                                        <input class="form-control me-2 
+                                smallSearchBar" type="search" placeholder="" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div style="padding: 0;" class="col-sm-1 d-sm-block d-md-none">
+                                        <p class="fontSans textMargins checkIn">Room Type</p>
+                                    </div>
+                                    <form class="d-flex flex" role="search">
+                                        <input class="form-control me-2 
+                                smallSearchBar" type="search" placeholder="" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col availBtn">
+                                    <button style="width: 100%; color: #FFFFFF;" class="btn checkBtn searchBar"
+                                        type="submit">Check Availability</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end mobile responsiveness -->
                     </div>
                 </div>
                 <div class="row">

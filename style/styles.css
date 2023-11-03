@@ -149,6 +149,12 @@ body {
 
 
 /* CARDS START */
+@media only screen and (max-width: 765px) {
+    .dontShow {
+        display: none;
+    }
+}
+
 .bgImage2 {
     background-image: url(../assets/bg2.jpg);
     background-repeat: no-repeat;
@@ -156,10 +162,31 @@ body {
     background-position: center;
 }
 
-.cardImage {
+.hidden {
+    overflow: hidden;
+}
+
+.queenRoom {
+    transform: scale(2);
+    width: 400px;
     object-fit: cover;
     object-position: center;
 }
+
+.kingRoom {
+    transform: scale(2);
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.beachRoom {
+    transform: scale(2.5);
+    width: 400px;
+    object-fit: cover;
+    object-position: left;
+}
+
 
 .cardFont {
     font-family: Dosis;
@@ -206,6 +233,14 @@ body {
 
 .hamsterMed {
     margin-left: 10px;
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: -60px;
+}
+
+.hamsterSm {
     width: 100%;
     height: 98%;
     object-fit: cover;
@@ -281,6 +316,7 @@ body {
 /* AMENITIES END */
 
 /* RESERVE START */
+
 .hamReserve {
     width: 100%;
     height: 80%;
@@ -300,13 +336,20 @@ body {
 
 .searchBar {
     height: 40px;
-    width: 140px;
+    width: 190px;
     border-radius: 0;
 }
 
 .medSearchBar {
     height: 40px;
     width: 100px;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.smallSearchBar {
+    height: 40px;
+    width: 300px;
     border-radius: 0;
     white-space: nowrap;
 }
@@ -326,9 +369,8 @@ body {
     font-size: 20px;
 }
 
-.checkIn {
-    margin: 0px 8px 0px 0px;
-    padding: 6px 12px;
+.availBtn {
+    padding-top: 30px;
 }
 /* RESERVE END */
 
