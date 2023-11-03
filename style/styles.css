@@ -7,9 +7,6 @@ body {
 }
 
 /* NAVBAR START */
-.navBg {
-    background-color: #000324;
-}
 
 .border {
     margin-bottom: 10px;
@@ -98,6 +95,12 @@ body {
     object-position: center;
 }
 
+@media only screen and (max-width: 1024px) {
+    .noShow {
+        display: none;
+    }
+}
+
 .hamHome2 {
     width: 50%;
     height: 90%;
@@ -105,14 +108,42 @@ body {
     object-position: center;
 }
 
+.hamHomeSm {
+    margin-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.hamSmFont {
+    padding-top: 15px;
+    margin-left: 0;
+    font-family: Dosis;
+    font-size: 30px; 
+    color: #1A1B26;
+}
+
 .awardImage {
     width: 160px;
     height: 140px;
 }
 
+.awardImage2 {
+    width: 50px;
+    height: 50px;
+}
+
 .genImage {
     width: 190px;
     height: 170px;
+}
+
+.genImage2 {
+    width: 50px;
+    height: 50px;
 }
 /* AWARDS END */
 
@@ -269,8 +300,15 @@ body {
 
 .searchBar {
     height: 40px;
-    width: 160px;
+    width: 140px;
     border-radius: 0;
+}
+
+.medSearchBar {
+    height: 40px;
+    width: 100px;
+    border-radius: 0;
+    white-space: nowrap;
 }
 
 .reserveBar {

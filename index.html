@@ -17,10 +17,25 @@
 <body>
 
     <!-- start of navbar -->
-    <div class="container-fluid navBg font">
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 d-md-none d-lg-block">
-                <ul class="nav justify-content-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+        <div style="background-color: #000324;" class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse font flex" id="navbarNav">
+                <ul class="navbar-nav textMargins">
+                    <li class="nav-item d-none d-md-block d-lg-none">
+                        <a class="nav-link" href="">
+                            <img src="./assets/Logo.png" alt="La Petite Maison Logo">
+                        </a>
+                    </li>
+                    <li class="nav-item d-sm-block d-md-none">
+                        <a class="nav-link" href="">
+                            <img src="./assets/Logo.png" alt="La Petite Maison Logo">
+                        </a>
+                    </li>
                     <li class="nav-item navText">
                         <a style="color: #FFFFFF;" class="nav-link active" aria-current="page" href="#">Overview</a>
                     </li>
@@ -30,7 +45,12 @@
                     <li class="nav-item navText">
                         <a style="color: #FFFFFF;" class="nav-link" href="#">Packages</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-lg-block d-xl-none">
+                        <a class="nav-link" href="">
+                            <img src="./assets/Logo.png" alt="La Petite Maison Logo">
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-xxl-block">
                         <a class="nav-link" href="">
                             <img src="./assets/Logo.png" alt="La Petite Maison Logo">
                         </a>
@@ -47,43 +67,8 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- end of navbar -->
-
-
-    <!-- start tablet responsiveness navbar -->
-    <div class="container-fluid navBg navMedText">
-        <div class="row">
-            <div class="col-md d-lg-none .d-xl-block d-xl-none .d-xxl-block">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item navText">
-                        <a style="color: #FFFFFF;" class="nav-link active" aria-current="page" href="#">Overview</a>
-                    </li>
-                    <li class="nav-item navText">
-                        <a style="color: #FFFFFF;" class="nav-link" href="#">Rooms</a>
-                    </li>
-                    <li class="nav-item navText">
-                        <a style="color: #FFFFFF;" class="nav-link" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <img src="./assets/Logo.png" alt="La Petite Maison Logo">
-                        </a>
-                    </li>
-                    <li class="nav-item navText">
-                        <a style="color: #FFFFFF;" class="nav-link" href="#">Amenities</a>
-                    </li>
-                    <li class="nav-item navText">
-                        <a style="color: #FFFFFF;" class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item border navText">
-                        <a style="color: #FFFFFF;" class="nav-link" href="#">Reserve</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- end tablet responsiveness navbar -->
 
 
     <!-- start of header -->
@@ -104,11 +89,17 @@
     <!-- start of hamster's paradise box -->
     <div class="container">
         <div class="row">
-            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
+            <div class="col-xl-2 col-lg-2 noShow d-md-none d-sm-none d-lg-block">
                 <img class="hamHome" src="./assets/hamsterhomejpg.jpg"
                     alt="Hamster on a beach chair wearing a hat and eating">
             </div>
-            <div style="margin-left: 250px" class="col-xl-6 col-lg-6 d-md-none d-lg-block">
+            <div class="row">
+                <div style="padding: 0;" class="col .d-none d-sm-block d-md-none">
+                    <img class="hamHomeSm" src="./assets/hamsterhomejpg.jpg"
+                        alt="Hamster on a beach chair wearing a hat and eating">
+                </div>
+            </div>
+            <div style="margin-left: 250px" class="col-xl-6 col-lg-6 d-md-none d-lg-block noShow">
                 <h1 class="font2 ">Welcome to a hamster's paradise</h1>
                 <p class="font3">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed
                     for the small mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a
@@ -123,12 +114,30 @@
                 <img class="awardImage" src="./assets/awardgenuine.png" alt="genuine award image">
             </div>
 
+            <!-- mobile paragraph -->
+            <div class="col .d-none d-sm-block d-md-none textMargins">
+                <h1 class="hamSmFont ">Welcome to a hamster's paradise</h1>
+                <p class="font3">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed
+                    for the small mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a
+                    relaxing spa, and a pool with a beach side view. </p>
+                <p class="font3">Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich
+                    accommodations along with our unmatched luxury. Discover the satisfaction of indulging in our
+                    quality rooms, and thank you for choosing La Petite Maison.</p>
+                <div style="padding-bottom: 30px;" class="flex">
+                    <img class="awardImage2" src="./assets/awardfinest.png" alt="finest award image">
+                    <img class="genImage2" src="./assets/awardsatisfaction.png" alt="satisfaction award image">
+                    <img class="awardImage2" src="./assets/awardgenuine.png" alt="genuine award image">
+                </div>
+            </div>
+            <!-- mobile paragraph -->
+
             <!-- tablet start responsiveness -->
-            <div class="d-lg-none .d-xl-block d-xl-none .d-xxl-block">
+            <div class="d-none d-md-block d-lg-none">
                 <img style="padding-top: 50px; margin-left: 190px;" class="hamHome2" src="./assets/hamsterhomejpg.jpg"
                     alt="">
             </div>
-            <div style="padding-bottom: 20px;" class="d-lg-none .d-xl-block d-xl-none .d-xxl-block textMargins">
+            <div style="padding-bottom: 20px;" class="d-none d-md-block d-lg-none
+            textMargins">
                 <h1 style="padding-top: 0;" class="font2">Welcome to a hamster's paradise</h1>
                 <p class="font3">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed
                     for the small mammal with extravagance in mind. Escape to the warm comforts of stunning rooms, a
@@ -143,6 +152,7 @@
                 <img class="awardImage" src="./assets/awardgenuine.png" alt="genuine award image">
             </div>
             <!-- tablet end responsiveness -->
+
 
         </div>
     </div>
@@ -362,7 +372,8 @@
 
 
     <!-- start of amenities -->
-    <div class="container-fluid bgImage3 d-md-none .d-lg-block">
+    <div class="container-fluid bgImage3 d-none .d-xl-block .d-xxl-none d-none d-lg-block .d-xl-none
+    ">
         <div class="row">
             <div class="col-xl-12 col-lg-12">
                 <h1 style="padding-top: 30px;" class="amenFont textMargins">Amenities</h1>
@@ -468,39 +479,78 @@
             </div>
         </div>
     </div>
+    <!-- end tablet responsiveness amenities -->
 
     <!-- start of reserve box -->
     <div class="container-fluid">
         <div class="row flex">
             <div class="col-xl-8 col-lg-8">
                 <div style="padding-top: 80px;" class="row">
-                    <div class="col-xl-12 col-lg-12 reserveBar box2">
+                    <div class="col-xl-12 col-lg-12 col-md-12 reserveBar box2">
                         <h1 class="amenFont textMargins">Reserve a Room</h1>
                         <div class="row">
-                            <div class="col-xl-2 col-lg-2">
+                            <div style="padding: 0;" class="col-xl-2 col-lg-2 d-md-none d-lg-block">
                                 <p class="fontSans checkIn">Check In</p>
                             </div>
-                            <div class="col-xl-2 col-lg-2">
+                            <div style="padding: 0;" class="col-md-2 d-none d-md-block d-lg-none">
+                                <p class="fontSans checkIn">Check In</p>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
                                 <p class="fontSans checkIn">Check Out</p>
                             </div>
-                            <div class="col-xl-2 col-lg-2">
+                            <div style="padding: 0;" class="col-md-2 d-none d-md-block d-lg-none">
+                                <p class="fontSans checkIn">Check Out</p>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
                                 <p style="white-space: nowrap;" class="fontSans checkIn">Number of Guests</p>
                             </div>
-                            <div class="col-xl-2 col-lg-2">
+                            <div class="col-md-2 d-none d-md-block d-lg-none">
+                                <p style="padding: 0;" class="fontSans checkIn">Number of Guests</p>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 d-md-none d-lg-block">
                                 <p class="fontSans checkIn">Room Type</p>
                             </div>
-                            <div class="col-xl-2 col-lg-2"></div>
+                            <div class="col-md-2 d-none d-md-block d-lg-none">
+                                <p style="padding: 0;" class="fontSans checkIn">Room Type</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2"></div>
                             <div class="col-xl-2 col-lg-2"></div>
                         </div>
-                        <form class="d-flex flex" role="search">
-                            <input style="padding-left: 0;" class="form-control me-2 searchBar" type="search"
-                                placeholder="" aria-label="Search">
-                            <input class="form-control me-2 searchBar" type="search" placeholder="" aria-label="Search">
-                            <input class="form-control me-2 searchBar" type="search" placeholder="" aria-label="Search">
-                            <input class="form-control me-2 searchBar" type="search" placeholder="" aria-label="Search">
-                            <button style="width: 30%; color: #FFFFFF;" class="btn checkBtn searchBar"
-                                type="submit">Check Availability</button>
-                        </form>
+
+                        <!-- tablet responsiveness -->
+                        <div class="row d-none d-md-block d-lg-none">
+                            <form class="d-flex flex" role="search">
+                                <input style="padding-left: 0;" class="form-control me-2 
+                                medSearchBar" type="search" placeholder="" aria-label="Search">
+                                <input class="form-control me-2 medSearchBar" type="search" placeholder=""
+                                    aria-label="Search">
+                                <input class="form-control me-2 medSearchBar" type="search" placeholder=""
+                                    aria-label="Search">
+                                <input class="form-control me-2 medSearchBar" type="search" placeholder=""
+                                    aria-label="Search">
+                                <button style="width: 50%; color: #FFFFFF;" class="btn checkBtn searchBar"
+                                    type="submit">Check Availability</button>
+                            </form>
+                        </div>
+                        <!-- end tablet responsiveness -->
+
+                        <div class="row d-md-none d-lg-block">
+                            <form class="d-flex flex" role="search">
+                                <input style="padding-left: 0;" class="form-control me-2 searchBar" type="search"
+                                    placeholder="" aria-label="Search">
+                                <input class="form-control me-2 searchBar" type="search" placeholder=""
+                                    aria-label="Search">
+                                <input class="form-control me-2 searchBar" type="search" placeholder=""
+                                    aria-label="Search">
+                                <input class="form-control me-2 searchBar" type="search" placeholder=""
+                                    aria-label="Search">
+                                <button style="width: 50%; color: #FFFFFF;" class="btn checkBtn searchBar"
+                                    type="submit">Check Availability</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
