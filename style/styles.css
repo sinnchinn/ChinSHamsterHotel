@@ -2,11 +2,9 @@
     text-align: center;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 /* NAVBAR START */
+
 
 .border {
     margin-bottom: 10px;
@@ -334,9 +332,6 @@ body {
     justify-content: center;
 }
 
-.align {
-    padding: ;
-}
 
 .searchBar {
     height: 40px;
